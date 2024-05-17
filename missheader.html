@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+    /* miss work */
+*{
+    box-sizing: border-box;
+}
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #222020;
+}
+.header a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+.header a.logo{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.header a.logo:hover{
+    color: rgb(223, 120, 120);
+    background-color: rgb(24, 23, 23);
+
+}
+.header a.active{
+    background-color: white;
+    color: black;
+}
+.header-right{
+    float: right;
+} 
+.header-right a{
+    margin-right: 20px;
+    color: white;
+}
+@media only screen and (max-width:768px){
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right{
+        float: none;
+    }
+}
+/* miss work */
+</style>
+<body>
+
+<div class="header">
+    <a href="" class="logo">Logo</a>
+    <div class="header-right">
+        <a href="" class="active">Home</a>
+        <a href="">About</a>
+        <a href="">Contact us</a>
+    </div>
+</div>
+</body>
+</html>
